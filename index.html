@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="app">    
+            <h1 class="sr-only">
+                Weather App: Find Weather Updates
+            </h1>
+            <div class="bg">
+                <div class="search-bar">
+                    <div class="search-bar__search">
+                        <img src="Images/Icons/icon-map.svg" alt="" aria-hidden="true" class="icon-loc">
+                        <label for="searchInput" class="sr-only">Search The City</label>
+                        <input type="text" id="searchInput" class="search__input" placeholder="Search The City">
+                    </div>
+                    <button type="button" class="search-bar__btn" aria-label="Search">
+                        <img src="Images/Icons/icon-search.svg" alt="" class="search-bar__icon" aria-hidden="true">
+                    </button>
+                </div>
+            </div>
+    
+            <div class="main">
+                    <div class="main__empty">
+                        <div class="empty-hero">
+                            <span class="empty-hero__heading">
+                                Welcome Back!
+                            </span>
+                            <p class="empty-hero__desc">
+                                Enter city name to get the weather updates
+                            </p>
+                            <button type="button" class="empty-hero__btn">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main__container sr-only">
+                        
+                    <div class="main__left">
+                        <div class="weather-hero">
+                            <span class="weather-hero__city">
+        
+                            </span>
+                            <span class="weather-hero__temp">
+                                28 <sup class="temp-unit">&deg;</sup>
+                            </span>
+                            <span class="weather-hero__condition">
+                                Rainy Day
+                            </span>
+                            <p class="weather-hero__desc">
+                                Today, except a <span class="weather">rainy day</span> with temperature reaching upto
+                                28 <sup class="temp-unit">&deg;</sup>. Make sure to get an umbrella and raincoat before going out.
+                            </p>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stats-card">
+                                <div class="stats-card__label">
+                                    <img src="Images/Icons/icon-temp.svg" alt="" aria-hidden="true">
+                                    <span class="stats-card__title">
+                                        Feels Like
+                                    </span>
+                                </div>
+                                <span class="stats-card__value">
+                                  <!-- <sup class="temp-unit">0</sup> -->
+                                </span>
+                                <p class="stats-card__note">
+                                    <!-- Humidity is making it feel colder weather. -->
+                                </p>
+                            </div>
+                            <div class="stats-card">
+                                <div class="stats-card__label">
+                                    <img src="Images/Icons/icon-droplet.svg" alt="" aria-hidden="true">
+                                    <span class="stats-card__title">
+                                        Precipitation
+                                    </span>
+                                </div>
+                                <span class="stats-card__value">
+                                    <!-- 28 <sup class="temp-unit">0</sup> -->
+                                </span>
+                                <p class="stats-card__note">
+                                    <!-- Humidity is making it feel colder weather. -->
+                                </p>
+                            </div>
+                            <div class="stats-card">
+                                <div class="stats-card__label">
+                                    <img src="Images/Icons/icon-eye.svg" alt="" aria-hidden="true">
+                                    <span class="stats-card__title">
+                                        Visibility
+                                    </span>
+                                </div>
+                                <span class="stats-card__value">
+                                    <!-- 28 <sup class="temp-unit">0</sup> -->
+                                </span>
+                                <p class="stats-card__note">
+                                    <!-- Humidity is making it feel colder weather. -->
+                                </p>
+                            </div>
+                            <div class="stats-card">
+                                <div class="stats-card__label">
+                                    <img src="Images/Icons/icon-droplet.svg" alt="" aria-hidden="true">
+                                    <span class="stats-card__title">
+                                        Humidity
+                                    </span>
+                                </div>
+                                <span class="stats-card__value">
+                                    <!-- 28 <sup class="temp-unit">0</sup> -->
+                                </span>
+                                <p class="stats-card__note">
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__right">
+                        <!-- Weather -->
+                        <div class="hourly main__section">
+                            <div class="section__title">
+                                <img src="Images/Icons/icon-clock.svg" alt="" aria-hidden="true">
+                                <span class="section__heading">
+                                    Hourly Forecast
+                                </span>
+                            </div>
+                            <ul class="section__list hourly-list">
+                                <!-- Hourly Forecast Listed -->
+                           </ul>
+                        </div>
+                        <div class="forecast main__section">
+                            <div class="section__title">
+                                <img src="Images/Icons/icon-calendar.svg" alt="" aria-hidden="true">
+                                <span class="section__heading">
+                                    5-Day Forecast
+                                </span>
+                            </div>
+                            <ul class="section__list daily__forecast">
+                                <!-- Daily Forecast -->
+                            </ul>
+                        </div>
+                        <div class="condition">
+                            <div class="humidity-card condition-card">
+                                <div class="humidity-card__label condition-card__label">
+                                    <img src="Images/Icons/icon-droplet.svg" alt="" aria-hidden="true">
+                                    <span class="humidity-card__title condition-card__title">
+                                        Humidity
+                                    </span>
+                                </div>
+                                <span class="humidity-card__value condition-card__value">
+                                </span>
+                                <p class="humidity-card__note condition-card__note">
+        
+                                </p>
+                            </div>
+                            <div class="aqi-card condition-card">
+                                <div class="aqi-card__label condition-card__label">
+                                    <span class="aqi-card__title condition-card__title">
+                                        AQI
+                                    </span>
+                                </div>
+                                <span class="aqi-card__value condition-card__value">
+                                    
+                                </span>
+                                <p class="aqi-card__note condition-card__note">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----- Spinner ----- -->
+    <div class="spinner" role="status" aria-label="loading weather data"></div>
+    <!-- ----- Overlay ----- -->
+    <div class="overlay"></div>
+    <!-- ----- Error State ----- -->
+    <p class="error" role="alert" aria-live="polite">
+        Please enter the valid city name
+    </p>
+    <!-- ----- Empty Input Search ----- -->
+    <p class="empty-input" role="alert" aria-live="polite">
+        Please enter the city name
+    </p>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
