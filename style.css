@@ -71,13 +71,13 @@
 :root{
 
     /* -------- MAIN BACKGROUNDS ---------- */
-    --bg-main-default: url('/Images/Backgrounds/bg-default.jpg');
-    --bg-main-rainy: url('/Images/Backgrounds/bg-rainy.png');
-    --bg-main-sunny: url('/Images/Backgrounds/bg-sunny.jpg');
-    --bg-main-snowfall: url('/Images/Backgrounds/bg-snowfall.jpg');
-    --bg-main-cloudy: url('/Images/Backgrounds/bg-cloudy.jpg');
-    --bg-main-foggy: url('/Images/Backgrounds/bg-foggy.jpg');
-    --bg-main-thunder: url('/Images/Backgrounds/bg-thunderstrom.jpg');
+    --bg-main-default: url('./Images/Backgrounds/bg-default.jpg');
+    --bg-main-rainy: url('./Images/Backgrounds/bg-rainy.png');
+    --bg-main-sunny: url('./Images/Backgrounds/bg-sunny.jpg');
+    --bg-main-snowfall: url('./Images/Backgrounds/bg-snowfall.jpg');
+    --bg-main-cloudy: url('./Images/Backgrounds/bg-cloudy.jpg');
+    --bg-main-foggy: url('./Images/Backgrounds/bg-foggy.jpg');
+    --bg-main-thunder: url('./Images/Backgrounds/bg-thunderstrom.jpg');
 
     --border-default: 1px solid rgba(255,255,255,0.4);
   

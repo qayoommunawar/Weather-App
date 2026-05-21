@@ -112,13 +112,7 @@ cd weather-app
 ---
 
 ## Screenshots / Demo
-
-*Add screenshots here after testing:*
-- Desktop view (two-panel Grid layout)
-- Mobile view (stacked layout)
-- Weather card with live data
-
-*GIF demo: [Consider recording a quick 10–15 second screen capture of the app in action]*
+![Sreenshot of the app](screenshot.png)
 
 ---
 
